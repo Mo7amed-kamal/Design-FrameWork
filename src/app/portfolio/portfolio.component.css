@@ -1,0 +1,58 @@
+.line{
+    width: 80px;
+    height: 4px;
+    background-color: #2c3e50;
+}
+.info h2{
+    font-size: 40px;
+    color: #2c3e50;
+}
+@media screen and (max-width:800px) {
+    .info h2{
+        font-size: 25px;
+    }
+}
+.color{
+    color: #2c3e50;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.portfolio-item figure{
+    width:100%;
+}
+.portfolio-item img {
+    border-radius: 8px;
+}
+.portfolio-item .layer{
+    position: absolute;
+    top: 0;
+    left: 15px;
+    right: 15px;
+    bottom: 110%;
+    opacity: 0;
+    transition: 1s;
+}
+.portfolio-item .layer{
+    background-color: #1abc9ce6;
+}
+.portfolio-item:hover .layer{
+    bottom: 15px;
+    opacity: 1;
+}
+
+.portfolio-item figcaption i {
+    font-size: 80px;
+    color: white;
+}
+.modal-content {
+    background-color: transparent;
+    border: none;
+}
+.modal-header {
+    border-bottom: none;
+}
+.btn-close {
+    --bs-btn-close-bg: none;
+    --bs-btn-close-opacity:1;
+}

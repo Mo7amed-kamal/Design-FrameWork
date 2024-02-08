@@ -1,0 +1,93 @@
+/* You can add global styles to this file, and also import other style files */
+
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+
+/* Design scrollbar */
+::-webkit-scrollbar{
+  width: 18px;
+}
+::-webkit-scrollbar-track{
+  background-color: white;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #57f287;
+}
+
+/* Layer Page */
+.layerTop {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  z-index: 555;
+  animation: 1s top;
+  animation-fill-mode: forwards;
+}
+.layerBottom {
+  position: fixed;
+  bottom: 50%;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: black;
+  z-index: 55555;
+  animation: 1s bottom;
+  animation-fill-mode: forwards;
+}
+@keyframes top {
+  form{
+    top: 50%;
+  }
+  to {
+    top: 100%;
+    opacity: 0;
+  }
+}
+@keyframes bottom {
+  form{
+    bottom: 50%;
+  }
+  to {
+    bottom: 100%;
+    opacity: 0;
+  }
+}
+.layerLoading {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: 10px solid;
+  border-color: #eee black #eee #eee;
+  border-radius: 50%;
+  z-index: 5555555;
+  animation: 1.5s load infinite, 1.5s 1.5s load2;
+  animation-fill-mode: forwards;
+}
+@keyframes load {
+  form {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to{
+    transform: translate(-50%, -50%) rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes load2 {
+  form {
+    display: block;
+  }
+  to{
+    display: none;
+  }
+}

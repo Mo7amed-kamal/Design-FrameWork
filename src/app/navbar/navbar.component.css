@@ -1,0 +1,27 @@
+
+.navbar{
+  background-color: #2c3e50;
+  padding: 15px 0;
+  transition: padding 0.5s;
+  -webkit-transition: padding 0.5s;
+  -moz-transition: padding 0.5s;
+  -ms-transition: padding 0.5s;
+  -o-transition: padding 0.5s;
+}
+.nav-link{
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+.navbar-brand {
+  color: white;
+  font-size: 30px;
+}
+.test{
+  background-color: #1abc9c;
+}
+@media screen and (max-width:700px) {
+  .navbar-brand{
+    font-size: 20px;
+  }
+}
